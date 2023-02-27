@@ -7,3 +7,153 @@
 }
 
 /* Write CSS code below */
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+
+/* left section */
+
+.left-section{
+    grid-column: span 1;
+    background-color: #242531;
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: #f7f7f7;
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+    display: block;
+    margin: auto;
+    width: 60%;
+    border: 5px solid white;
+    border-radius: 30%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    color: white;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    color: teal;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    color: #ccc;
+}
+.social-links{
+    display: flex;
+    justify-content: space-around;
+}
+i{
+    color: teal;
+    margin-right: 10px;
+    cursor: pointer;
+}
+li{
+    color: #ccc;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+    color: #f7f7f7;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    color: #eee;
+}
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+.skill-item{
+    margin-top: 20px;
+}
+
+/* right section */
+
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    
+}
+.about{
+    padding: 0.5rem;
+    text-align: justify;
+    color: #888;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+}
+.edu-item{
+    padding: 0.5rem;
+}
+h4{
+    padding-bottom: 10px;
+    color: #555;
+}
+
+.para{
+    color: #888;
+    margin-top: 10px;
+    
+}
+
+
+@media screen and (max-width: 673px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+    .right-main-content{
+        padding: 5px 5px;
+    }
+    .left-section{
+        padding: 20px 0;
+    }
+    .description{
+        font-size: 1rem;
+    }
+    .para{
+        text-align: justify;
+    }
+    .stack{
+        text-align: left;
+    }
+    
+}
